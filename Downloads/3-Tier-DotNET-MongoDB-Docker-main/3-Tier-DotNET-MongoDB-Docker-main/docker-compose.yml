@@ -1,6 +1,12 @@
 version: '3.8'
 
 services:
+  app:
+    image: mongo:7.0
+    depends_on:
+      - mongodb
+    service1:
+    image: mongo:7.0
   mongodb:
     image: mongo:7.0
     container_name: mongodb
